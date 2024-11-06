@@ -1,0 +1,49 @@
+.girls {
+	height: 55vw;
+	position: relative;
+	padding-top: 10vw;
+	background-color: var(--thirty-color);
+	background-image: url('./../../assets/girls/girly.png');
+	background-repeat: no-repeat;
+	background-position: 37vw center;
+	background-size: 53.3vw;
+	// z-index: -5;
+}
+
+.girls__content {
+	max-width: 50vw;
+	margin-left: 5vw;
+}
+
+.girls__desc {
+	z-index: 5;
+}
+
+.girls__text {
+	color: var(--def-color);
+	// font-size: 96px;
+	font-weight: 700;
+	margin-bottom: 10vw;
+	@include adaptive-font(90, 24);
+}
+
+// .girls__bg-img {
+// 	width: 55.3vw;
+// 	position: absolute;
+// 	top: 9vw;
+// 	right: 10.5vw;
+// }
+
+@media screen and (max-width: 600px) {
+	.girls__btn {
+		max-width: 100px;
+		font-size: 9px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.girls__btn {
+		max-width: 80px;
+		font-size: 8px;
+	}
+}

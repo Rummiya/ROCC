@@ -1,0 +1,126 @@
+.product {
+    padding: 80px 0;
+}
+
+.product__title {
+    // font-size: 28px;
+    font-weight: 700;
+    color: var(--def-color);
+    text-align: center;
+    margin-bottom: 50px;
+    @include adaptive-font(28, 16)
+}
+
+.product__card-row {
+    display: flex;
+    column-gap: 19px;
+}
+
+.product__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 325px;
+    width: 100%;
+}
+
+.product__card-img img {
+    // max-width: 325px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.product__card-decs {
+    // font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    color: var(--def-color);
+    text-align: center;
+    padding-bottom: 10px;
+    @include adaptive-font(14, 8)
+}
+
+.product__card-btn {
+    width: 100%;
+    padding: .72vw 0;
+    border: none;  
+    background-color: var(--primary-color);
+    color: var(--def-color);
+    font-weight: 700;
+    // font-size: 14px;
+    transition: .2s ease;
+    cursor: pointer;
+    @include adaptive-font(14, 8)
+}
+
+.product__card-btn:hover {
+    color: #779c5e;
+}
+
+.product__btn {
+    margin-top: 35px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .product {
+        padding: 50px 0;
+    }
+
+    .product__title {
+        // font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    // .product__card-decs {
+    //     font-size: 12px;
+    // }
+
+    // .product__card-btn {
+    //     font-size: 12px;
+    // }
+}
+
+@media screen and (max-width: 768px) {
+    .product {
+        padding: 40px 0;
+    }
+
+    .product__title {
+        // font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    // .product__card-decs {
+    //     font-size: 10px;
+    // }
+
+    // .product__card-btn {
+    //     font-size: 10px;
+    // }
+
+    .product__btn {
+        margin-top: 35px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product__title {
+        // font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .product__card-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .product__card {
+        width: 40%;
+    }
+}
+

@@ -1,0 +1,40 @@
+.gallery {
+    // margin-bottom: 200px;
+}
+
+.gallery__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.gallery__col {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    // justify-content: end;
+    width: 50%;
+}
+
+.gallery__col:nth-child(2) {
+    // justify-content: start;
+}
+
+.gallery__small-img {
+    max-width: 50%;
+}
+
+.gallery__big-img {
+    max-width: 100%;
+}
+
+.gallery__text {
+    position: absolute;
+    // font-size: 38px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    line-height: 44px;
+    letter-spacing: 0%;
+    @include adaptive-font(38, 12)
+}

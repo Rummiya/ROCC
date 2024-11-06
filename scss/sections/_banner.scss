@@ -1,0 +1,17 @@
+.banner {
+    height: 49vw;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    padding-top: 18vw;
+}
+
+.banner__title {
+    color: var(--primary-color);
+    // font-size: ;
+    font-weight: 400;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    @include adaptive-font(80, 18)
+}
